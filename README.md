@@ -1,9 +1,9 @@
-## ECE2112-PA4 | Dirk Lendl E. Villaluna | 2ECE-A
+# ECE2112-PA4 | Dirk Lendl E. Villaluna | 2ECE-A
 
-## Overview
+# Overview
 This repository contains the completed Programming Assignment 4 for the course ECE2112 - Advanced Programming and Algorithms for the Academic Year 2026-27. The  topic coverage of the said programming assignment is Data Wrangling and Data Visualization using Pandas and Matplotlib.
 
-# SETUP
+## SETUP
 Load the provided dataset board2.csv and derive the row-wise Average score for each examinee across their exam subjects (Math, GEAS, and Electronics).
 
 Requirements to follow:
@@ -26,7 +26,8 @@ df['Average'] = df[['Math', 'GEAS', 'Electronics']].mean(axis=1)
 
 ```
 
-A. VISAYAS COMMUNICATION EXAMINEES PROBLEM
+## A. VISAYAS COMMUNICATION EXAMINEES PROBLEM
+
 Filter the dataset for students whose hometown is in Visayas and whose track is Communication. Store the resulting DataFrame in VisComm, retaining only the specified columns: Name, Gender, Math, Electronics, and Average.
 
 Requirements to follow:
@@ -55,7 +56,8 @@ display(VisComm)
 print("Number of rows:", len(VisComm))
 ```
 
-B. VISAYAS FEMALE EXAMINEES PROBLEM
+## B. VISAYAS FEMALE EXAMINEES PROBLEM
+
 Filter the dataset for female students whose hometown is in Visayas and store the result in VisFemale, retaining Name, Track, GEAS, Electronics, and Average. Additionally, display the subset of female students with an Average score of at least 60, without overwriting or mutating VisFemale.
 
 Requirements to follow:
@@ -89,7 +91,8 @@ print("\n--- VisFemale (Average >= 60) ---")
 display(vis_female_passed)
 ```
 
-C. CATEGORY-AVERAGE VISUALIZATION & INTERPRETATION PROBLEM
+## C. CATEGORY-AVERAGE VISUALIZATION & INTERPRETATION PROBLEM
+
 Compute the mean of Average for each category under Track, Gender, and Hometown. Display the summary tables, visualize them side-by-side using a 3-subplot bar chart figure sharing a common y-axis, and state the categories with the highest sample mean average without asserting causal claims.
 
 Requirements to follow:
@@ -160,5 +163,5 @@ print(f"For Gender, {best_gender} had the highest sample mean Average score.")
 print(f"For Hometown, {best_hometown} had the highest sample mean Average score.")
 ```
 
-## THANK YOU SO MUCH FOR READING!!! :D
-# To view the main Python program, open the .ipynb file included in this repository. Thank you!
+# THANK YOU SO MUCH FOR READING!!! :D
+## To view the main Python program, open the .ipynb file included in this repository. Thank you!
